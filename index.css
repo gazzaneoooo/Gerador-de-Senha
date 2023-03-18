@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,500&display=swap');
+
+:root {
+    --cor-hover: #725AC1;
+    --cor-cinza: #bdbdbd;
+    --cor-cinza-escuro: #434242;
+    --cor-container: #222222;
+    --cor-branco: #ffffff;
+    --cor-preto: #131212;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    background-color: var(--cor-cinza-escuro);
+}
+
+.container {
+    margin: 10% auto; /* Define as margens superior e inferior como 0 e centraliza a div horizontalmente */
+    background-color: var(--cor-container);
+    padding: 14em 1em 5em 2em;
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px #131212;
+}
+
+.titulo-gerador {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -500%); text-align: center;
+    color: var(--cor-branco);
+}
+
+
+#password {
+    width: 50%; /* Defina a largura da caixa */
+    margin: 0 auto; /* Centralize horizontalmente */
+    display: flex; /* Defina a caixa como um contêiner flexível */
+    justify-content: center; /* Centralize verticalmente */
+    align-items: center; /* Centralize horizontalmente */
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    background-color: var(--cor-cinza);
+    margin-top: 3em;
+    box-shadow: 5px 10px 10px #131212;
+    color: var(--cor-hover);
+    font-weight: 700;
+}
+
+input:focus {
+    outline: none;
+}
+
+#generate {
+    display: block; /* Define o botão como um elemento de bloco */
+    margin: 0 auto; /* Centralize horizontalmente */
+    margin-top: 8em;
+    padding: 1em;
+    border-radius: 10px;
+    padding: 30px 50px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--cor-hover);
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid var(--cor-hover);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 var(--cor-hover);
+}
+  
+#generate:hover {
+    color: var(--cor-branco);
+    box-shadow: inset 0 -100px 0 0 var(--cor-hover);
+}
+  
+#generate:active {
+    transform: scale(0.9);
+}
+
+#length {
+    padding: 0.2em;
+    border-radius: 10px;
+    margin-left: 1.5em;
+    font-family: 'Montserrat';
+}
+
+#length2 {
+    color: var(--cor-branco);
+    margin-left: 0.5em;
+    font-size: 20px;
+}
+
+* #uppercase {
+    margin-bottom: 1em;
+}
+
+#numbers {
+    margin-bottom: 1em;
+}
+
+#symbols{
+    margin-bottom: 1em;
+} 
+
+.frases {
+    margin-left: 10px;
+    color: var(--cor-branco);
+    margin-left: 0.5em;
+    font-size: 20px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    color: var(--cor-branco);
+}
+
+@media (max-width: 1098px) {
+    #length2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #length {
+        padding: 0.2em;
+    }
+}
+
+@media (max-width: 730px) {
+    .titulo-gerador {
+        display: none;
+    }
+
+    .container {
+        padding: 2em;
+    }
+}

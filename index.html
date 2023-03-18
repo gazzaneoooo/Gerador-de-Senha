@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Gerador de Senha</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="titulo-gerador">Gerador de Senha</h1>
+    <label id="length2" for="length">Comprimento da senha:</label>
+    <input type="number" id="length" value="8"><br><br>
+    <input type="checkbox" id="uppercase" checked>
+    <label class="frases" for="uppercase">Incluir letras maiúsculas</label><br>
+    <input type="checkbox" id="numbers" checked>
+    <label class="frases" for="numbers">Incluir números</label><br>
+    <input type="checkbox" id="symbols" checked>
+    <label class="frases" for="symbols">Incluir caracteres especiais</label><br><br>
+    <p id="password">Senha</p>
+    <button id="generate">Gerar senha</button>
+    </div>
+</body>
+<footer class="rodape">Desenvolvido por Vicente</footer>
+<script src="./botao.js"></script>
+</html>
